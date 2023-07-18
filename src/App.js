@@ -1,8 +1,16 @@
+import React from 'react';
+function City({name}) {
+  return <div>Hello, visit {name.toUpperCase()}</div>
+}
 
+function Country({capital}) {
+  return <div>Hello, Visit {capital.toUpperCase()}</div>
+}
 function App() {
   return (
     <>
-      <h1>hello</h1>
+    <Country/>
+    <City/>
     </>
   );
 }
